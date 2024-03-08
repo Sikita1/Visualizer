@@ -17,6 +17,11 @@ public class ADS : MonoBehaviour
         YandexGame.CloseFullAdEvent -= CloseCallback;
     }
 
+    private void Start()
+    {
+        YandexGame.GameReadyAPI();
+    }
+
     public void Show() =>
         YandexGame.FullscreenShow();
 
